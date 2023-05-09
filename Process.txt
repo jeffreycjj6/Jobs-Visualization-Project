@@ -1,0 +1,11 @@
+First started wtih creating the actual web applciation through Python's flask library
+Then had to register the webpages that would be generated from that and supply their html renders
+The first renders were of the data obtained from the kaggle cleaning
+Then added an SVG map of the USA and used CSS styling to make it interactable for every single state
+    Ran into a few problems involving being able to hover and highlight borders
+Next is to generate a page for each individual state that will showcase its aggregate data and all of its job listings
+    This can be done by making variable parameters for the state html that displays a dataset of only the <<state>> in question
+    Images could be done in a similar way
+    Hopefully will also be able to map out each individual location of a job based on its city in that state
+    Basically write code that will generate state.html rather than create a unique page for all states individually
+Finally make the site more pretty by adding effects and designs
