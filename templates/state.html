@@ -9,5 +9,18 @@
 </head>
 <body>
     <h1>This is {{state}}</h1>
+    <img src="{{url_for('static', filename=stateImageURL) }}" height = 400px class = centeredImage>
+    <p>Living here costs roughly {{stateData.iloc[0]['averageCostOfLivingFactor']}}x times the national average. </p>
+    <p>Number of Jobs Found: {{stateData.iloc[0]['listings']}} </p>
+    <p>Salaries (Nationally Stardardized): [Median = ${{stateData.iloc[0]['standardizedMedianSalaries']}}] | [Average = ${{stateData.iloc[0]['standardizedAverageSalaries']}}]</p>
+    <p>Salaries (State Relative): [Median = ${{stateData.iloc[0]['medianSalary']}}] | [Average = ${{stateData.iloc[0]['averageSalary']}}]</p>
+    <p>Company With The Most Listings: {{stateData.iloc[0]['commonCompany']}}</p>
+    <p>City With The Most Listings: {{stateData.iloc[0]['commonLocation']}}</p>
+    <p>Most Common Jobs: {{jobSeries.to_string()}}</p>
+
+    <!-- Since stateJobs is already an html file that was passed in, it can just be placed like so
+    there is no need to convert a dataframe to html here or use a jinja loop -->
+    {{stateJobsHTML | safe}}
+
 </body>
 </html>

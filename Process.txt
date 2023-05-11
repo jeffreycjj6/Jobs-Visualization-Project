@@ -1,0 +1,39 @@
+First started wtih creating the actual web applciation through Python's flask library
+Then had to register the webpages that would be generated from that and supply their html renders
+The first renders were of the data obtained from the kaggle cleaning
+Then added an SVG map of the USA and used CSS styling to make it interactable for every single state
+    Ran into a few problems involving being able to hover and highlight borders
+Next is to generate a page for each individual state that will showcase its aggregate data and all of its job listings
+    This can be done by making variable parameters for the state html that displays a dataset of only the <<state>> in question
+    Images could be done in a similar way
+    Hopefully will also be able to map out each individual location of a job based on its city in that state
+    Basically write code that will generate state.html rather than create a unique page for all states individually
+Finally make the site more pretty by adding effects and designs
+
+
+Development Log - Jeff C.
+
+5/8/2023
+- Set up the inital wep app for the application such as the URLs and basic routes
+- Added html pages for the dataframes, the main map homepage and started dynamic state pages
+    - Added the SVG Map of the United States and enabled each state to be hover-able
+    - Converted the clean dataframes to CSV's and then to HTML's
+
+5/10/2023
+- Continued dynamic html pages for all 50 states, though currently only Alabama, Arizona and Alaska are directly accessible
+    - Each page showcases aggregate data in 1-line sentences and then shows a table of all job listings for that state
+        - This is done by passing in state-specific versions of the main aggregate/listing dataframe csv's
+        - For the main job listings, an html was passed in instead to take advantage of Pandas to_html function
+    - Dynamic imaging was set up using the URL parameters, though only Alabama has an actual image as of now
+    - CSS was adjusted to make all of the new data shown to be aligned with the center
+- Did some additional data cleaning for the datasets to include most common job title and city location for the aggregate data (and included its singular version for job dataframe)
+    - This also includes adding a standardized average and median salary for the aggregate data
+    - Finally did some cleaning up on numbers to reduce them to 2 decimal places maximum
+- To-Do:
+    - Add images for all 50 states which can either be generic state images or possibly GEOPANDAS generated city/job-plotted state images
+    - Clean up data dispaly by organizing the layout of it
+        - Furthermore, find a method of better showcasing what types of jobs are found most often in that state
+    - Add a style for all webpages to make it look prettier
+        - This can possibly include also changing fonts and colors
+    - Possibly add a search bar that detects/provides a list of all the jobs you are looking for and from what state (could add ML to this)
+    - POssibly figure out a way to plot an interactive map for all job listings (though a static GEOPANDAS image would suffice)

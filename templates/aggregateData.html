@@ -2,571 +2,727 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Unnamed: 0</th>
       <th>State</th>
       <th>yearsofexperience</th>
       <th>listings</th>
       <th>medianSalary</th>
       <th>averageSalary</th>
       <th>commonCompany</th>
+      <th>commonLocation</th>
+      <th>commonJob</th>
       <th>averageCostOfLivingFactor</th>
+      <th>standardizedMedianSalaries</th>
+      <th>standardizedAverageSalaries</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
       <td>AK</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1.093000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.09</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>AL</td>
       <td>5.0</td>
       <td>25.0</td>
       <td>110000.0</td>
-      <td>109120.000000</td>
+      <td>109120.00</td>
       <td>Shipt</td>
-      <td>0.893667</td>
+      <td>Huntsville, AL</td>
+      <td>Software Engineer</td>
+      <td>0.89</td>
+      <td>123088.40</td>
+      <td>122103.69</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2</td>
       <td>AR</td>
       <td>5.0</td>
       <td>88.0</td>
       <td>100000.0</td>
-      <td>104454.545455</td>
+      <td>104454.55</td>
       <td>Walmart Labs</td>
-      <td>0.860375</td>
+      <td>Bentonville, AR</td>
+      <td>Software Engineer</td>
+      <td>0.86</td>
+      <td>116228.39</td>
+      <td>121405.84</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
       <td>AZ</td>
       <td>5.0</td>
       <td>379.0</td>
       <td>112000.0</td>
-      <td>113055.408971</td>
+      <td>113055.41</td>
       <td>Intel</td>
-      <td>1.003875</td>
+      <td>Phoenix, AZ</td>
+      <td>Software Engineer</td>
+      <td>1.00</td>
+      <td>111567.68</td>
+      <td>112619.01</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
       <td>CA</td>
       <td>6.0</td>
       <td>22824.0</td>
       <td>160000.0</td>
-      <td>161392.882054</td>
+      <td>161392.88</td>
       <td>Google</td>
-      <td>1.257467</td>
+      <td>San Francisco, CA</td>
+      <td>Software Engineer</td>
+      <td>1.26</td>
+      <td>127239.95</td>
+      <td>128347.64</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>5</td>
       <td>CO</td>
       <td>6.0</td>
       <td>590.0</td>
       <td>130000.0</td>
-      <td>128785.593220</td>
+      <td>128785.59</td>
       <td>Google</td>
-      <td>1.083000</td>
+      <td>Denver, CO</td>
+      <td>Software Engineer</td>
+      <td>1.08</td>
+      <td>120036.93</td>
+      <td>118915.60</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>6</td>
       <td>CT</td>
       <td>6.0</td>
       <td>106.0</td>
       <td>109000.0</td>
-      <td>115047.169811</td>
+      <td>115047.17</td>
       <td>FactSet</td>
-      <td>1.085600</td>
+      <td>Hartford, CT</td>
+      <td>Software Engineer</td>
+      <td>1.09</td>
+      <td>100405.31</td>
+      <td>105975.65</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>7</td>
       <td>DC</td>
       <td>5.0</td>
       <td>592.0</td>
       <td>130000.0</td>
-      <td>131646.959459</td>
+      <td>131646.96</td>
       <td>Capital One</td>
-      <td>1.201000</td>
+      <td>Washington, DC</td>
+      <td>Software Engineer</td>
+      <td>1.20</td>
+      <td>108243.13</td>
+      <td>109614.45</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>8</td>
       <td>DE</td>
       <td>5.0</td>
       <td>59.0</td>
       <td>103000.0</td>
-      <td>107576.271186</td>
+      <td>107576.27</td>
       <td>JPMorgan Chase</td>
-      <td>1.013000</td>
+      <td>Wilmington, DE</td>
+      <td>Software Engineer</td>
+      <td>1.01</td>
+      <td>101678.18</td>
+      <td>106195.73</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>9</td>
       <td>FL</td>
       <td>6.0</td>
       <td>298.0</td>
       <td>112000.0</td>
-      <td>117117.449664</td>
+      <td>117117.45</td>
       <td>Citrix Systems Inc</td>
-      <td>1.012640</td>
+      <td>Orlando, FL</td>
+      <td>Software Engineer</td>
+      <td>1.01</td>
+      <td>110601.99</td>
+      <td>115655.56</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>10</td>
       <td>GA</td>
       <td>5.0</td>
       <td>573.0</td>
       <td>115000.0</td>
-      <td>120424.083770</td>
+      <td>120424.08</td>
       <td>Microsoft</td>
-      <td>0.919000</td>
+      <td>Atlanta, GA</td>
+      <td>Software Engineer</td>
+      <td>0.92</td>
+      <td>125136.02</td>
+      <td>131038.18</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>11</td>
       <td>HI</td>
       <td>5.0</td>
       <td>4.0</td>
       <td>149000.0</td>
-      <td>142000.000000</td>
+      <td>142000.00</td>
       <td>Amazon</td>
-      <td>1.545750</td>
+      <td>Honolulu, HI</td>
+      <td>Software Engineer</td>
+      <td>1.55</td>
+      <td>96393.34</td>
+      <td>91864.79</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>12</td>
       <td>IA</td>
       <td>6.0</td>
       <td>31.0</td>
       <td>104000.0</td>
-      <td>104903.225806</td>
+      <td>104903.23</td>
       <td>Collins Aerospace</td>
-      <td>0.895375</td>
+      <td>Des Moines, IA</td>
+      <td>Software Engineer</td>
+      <td>0.90</td>
+      <td>116152.45</td>
+      <td>117161.22</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>13</td>
       <td>ID</td>
       <td>6.0</td>
       <td>45.0</td>
       <td>103000.0</td>
-      <td>115600.000000</td>
+      <td>115600.00</td>
       <td>Micron Technology</td>
-      <td>0.949667</td>
+      <td>Boise, ID</td>
+      <td>Software Engineer</td>
+      <td>0.95</td>
+      <td>108459.11</td>
+      <td>121726.92</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>14</td>
       <td>IL</td>
       <td>5.0</td>
       <td>885.0</td>
       <td>123000.0</td>
-      <td>124228.813559</td>
+      <td>124228.81</td>
       <td>Accenture</td>
-      <td>0.880583</td>
+      <td>Chicago, IL</td>
+      <td>Software Engineer</td>
+      <td>0.88</td>
+      <td>139680.14</td>
+      <td>141075.59</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>15</td>
       <td>IN</td>
       <td>5.5</td>
       <td>100.0</td>
       <td>96000.0</td>
-      <td>100870.000000</td>
+      <td>100870.00</td>
       <td>Salesforce</td>
-      <td>0.873000</td>
+      <td>Indianapolis, IN</td>
+      <td>Software Engineer</td>
+      <td>0.87</td>
+      <td>109965.64</td>
+      <td>115544.10</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>16</td>
       <td>KS</td>
       <td>7.0</td>
       <td>37.0</td>
       <td>93000.0</td>
-      <td>105972.972973</td>
+      <td>105972.97</td>
       <td>Garmin</td>
-      <td>0.875200</td>
+      <td>Olathe, KS</td>
+      <td>Software Engineer</td>
+      <td>0.88</td>
+      <td>106261.43</td>
+      <td>121084.29</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>17</td>
       <td>KY</td>
       <td>7.5</td>
       <td>24.0</td>
       <td>100000.0</td>
-      <td>108625.000000</td>
+      <td>108625.00</td>
       <td>Humana</td>
-      <td>0.881778</td>
+      <td>Louisville, KY</td>
+      <td>Software Engineer</td>
+      <td>0.88</td>
+      <td>113407.26</td>
+      <td>123188.63</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>18</td>
       <td>LA</td>
       <td>5.0</td>
       <td>31.0</td>
       <td>93000.0</td>
-      <td>103354.838710</td>
+      <td>103354.84</td>
       <td>IBM</td>
-      <td>0.886000</td>
+      <td>New Orleans, LA</td>
+      <td>Software Engineer</td>
+      <td>0.89</td>
+      <td>104966.14</td>
+      <td>116653.32</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>19</td>
       <td>MA</td>
       <td>5.0</td>
       <td>1738.0</td>
       <td>135000.0</td>
-      <td>132170.598389</td>
+      <td>132170.60</td>
       <td>Wayfair</td>
-      <td>1.145500</td>
+      <td>Boston, MA</td>
+      <td>Software Engineer</td>
+      <td>1.15</td>
+      <td>117852.47</td>
+      <td>115382.45</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>20</td>
       <td>MD</td>
       <td>6.0</td>
       <td>105.0</td>
       <td>124000.0</td>
-      <td>124266.666667</td>
+      <td>124266.67</td>
       <td>Northrop Grumman</td>
-      <td>1.011200</td>
+      <td>Baltimore, MD</td>
+      <td>Software Engineer</td>
+      <td>1.01</td>
+      <td>122626.58</td>
+      <td>122890.30</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>21</td>
       <td>ME</td>
       <td>5.0</td>
       <td>4.0</td>
       <td>96500.0</td>
-      <td>97000.000000</td>
+      <td>97000.00</td>
       <td>Blackhawk Network</td>
-      <td>1.026750</td>
+      <td>Portland, ME</td>
+      <td>Software Engineer</td>
+      <td>1.03</td>
+      <td>93985.88</td>
+      <td>94472.85</td>
     </tr>
     <tr>
       <th>22</th>
-      <td>22</td>
       <td>MI</td>
       <td>5.0</td>
       <td>218.0</td>
       <td>110000.0</td>
-      <td>113000.917431</td>
+      <td>113000.92</td>
       <td>General Motors</td>
-      <td>0.898350</td>
+      <td>Detroit, MI</td>
+      <td>Software Engineer</td>
+      <td>0.90</td>
+      <td>122446.71</td>
+      <td>125787.18</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>23</td>
       <td>MN</td>
       <td>5.0</td>
       <td>278.0</td>
       <td>119000.0</td>
-      <td>118758.992806</td>
+      <td>118758.99</td>
       <td>Target</td>
-      <td>0.981143</td>
+      <td>Minneapolis, MN</td>
+      <td>Software Engineer</td>
+      <td>0.98</td>
+      <td>121287.13</td>
+      <td>121041.49</td>
     </tr>
     <tr>
       <th>24</th>
-      <td>24</td>
       <td>MO</td>
       <td>5.0</td>
       <td>190.0</td>
       <td>89000.0</td>
-      <td>101252.631579</td>
+      <td>101252.63</td>
       <td>Cerner</td>
-      <td>0.877700</td>
+      <td>Kansas City, MO</td>
+      <td>Software Engineer</td>
+      <td>0.88</td>
+      <td>101401.39</td>
+      <td>115361.32</td>
     </tr>
     <tr>
       <th>25</th>
-      <td>25</td>
       <td>MS</td>
       <td>2.0</td>
       <td>3.0</td>
       <td>100000.0</td>
-      <td>90333.333333</td>
+      <td>90333.33</td>
       <td>ABB</td>
-      <td>0.859667</td>
+      <td>Mississippi State, MS</td>
+      <td>Business Analyst</td>
+      <td>0.86</td>
+      <td>116324.16</td>
+      <td>105079.49</td>
     </tr>
     <tr>
       <th>26</th>
-      <td>26</td>
       <td>MT</td>
       <td>8.0</td>
       <td>7.0</td>
       <td>95000.0</td>
-      <td>113714.285714</td>
+      <td>113714.29</td>
       <td>Oracle</td>
-      <td>1.054000</td>
+      <td>Helena, MT</td>
+      <td>Software Engineer</td>
+      <td>1.05</td>
+      <td>90132.83</td>
+      <td>107888.32</td>
     </tr>
     <tr>
       <th>27</th>
-      <td>27</td>
       <td>NC</td>
       <td>6.0</td>
       <td>504.0</td>
       <td>123000.0</td>
-      <td>125559.523810</td>
+      <td>125559.52</td>
       <td>IBM</td>
-      <td>0.918400</td>
+      <td>Raleigh, NC</td>
+      <td>Software Engineer</td>
+      <td>0.92</td>
+      <td>133928.57</td>
+      <td>136715.51</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>28</td>
       <td>ND</td>
       <td>4.0</td>
       <td>5.0</td>
       <td>90000.0</td>
-      <td>101600.000000</td>
+      <td>101600.00</td>
       <td>AWS</td>
-      <td>0.914750</td>
+      <td>Fargo, ND</td>
+      <td>Software Engineer</td>
+      <td>0.91</td>
+      <td>98387.54</td>
+      <td>111068.60</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>29</td>
       <td>NE</td>
       <td>5.0</td>
       <td>25.0</td>
       <td>105000.0</td>
-      <td>102800.000000</td>
+      <td>102800.00</td>
       <td>Mutual of Omaha</td>
-      <td>0.921333</td>
+      <td>Omaha, NE</td>
+      <td>Software Engineer</td>
+      <td>0.92</td>
+      <td>113965.27</td>
+      <td>111577.42</td>
     </tr>
     <tr>
       <th>30</th>
-      <td>30</td>
       <td>NH</td>
       <td>5.0</td>
       <td>35.0</td>
       <td>111000.0</td>
-      <td>105685.714286</td>
+      <td>105685.71</td>
       <td>Oracle</td>
-      <td>1.055750</td>
+      <td>Nashua, NH</td>
+      <td>Software Engineer</td>
+      <td>1.06</td>
+      <td>105138.53</td>
+      <td>100104.87</td>
     </tr>
     <tr>
       <th>31</th>
-      <td>31</td>
       <td>NJ</td>
       <td>5.0</td>
       <td>460.0</td>
       <td>130000.0</td>
-      <td>133928.260870</td>
+      <td>133928.26</td>
       <td>JPMorgan Chase</td>
-      <td>1.034000</td>
+      <td>Jersey City, NJ</td>
+      <td>Software Engineer</td>
+      <td>1.03</td>
+      <td>125725.34</td>
+      <td>129524.43</td>
     </tr>
     <tr>
       <th>32</th>
-      <td>32</td>
       <td>NM</td>
       <td>4.5</td>
       <td>10.0</td>
       <td>119500.0</td>
-      <td>116300.000000</td>
+      <td>116300.00</td>
       <td>Sandia National Labs</td>
-      <td>0.906250</td>
+      <td>Albuquerque, NM</td>
+      <td>Software Engineer</td>
+      <td>0.91</td>
+      <td>131862.07</td>
+      <td>128331.03</td>
     </tr>
     <tr>
       <th>33</th>
-      <td>33</td>
       <td>NV</td>
       <td>4.0</td>
       <td>24.0</td>
       <td>110000.0</td>
-      <td>108166.666667</td>
+      <td>108166.67</td>
       <td>Zappos</td>
-      <td>1.037000</td>
+      <td>Las Vegas, NV</td>
+      <td>Software Engineer</td>
+      <td>1.04</td>
+      <td>106075.22</td>
+      <td>104307.30</td>
     </tr>
     <tr>
       <th>34</th>
-      <td>34</td>
       <td>NY</td>
       <td>5.0</td>
       <td>4715.0</td>
       <td>152000.0</td>
-      <td>153596.447508</td>
+      <td>153596.45</td>
       <td>Bloomberg</td>
-      <td>0.970389</td>
+      <td>New York, NY</td>
+      <td>Software Engineer</td>
+      <td>0.97</td>
+      <td>156638.23</td>
+      <td>158283.39</td>
     </tr>
     <tr>
       <th>35</th>
-      <td>35</td>
       <td>OH</td>
       <td>5.5</td>
       <td>202.0</td>
       <td>105000.0</td>
-      <td>109955.445545</td>
+      <td>109955.45</td>
       <td>JPMorgan Chase</td>
-      <td>0.888045</td>
+      <td>Columbus, OH</td>
+      <td>Software Engineer</td>
+      <td>0.89</td>
+      <td>118237.19</td>
+      <td>123817.36</td>
     </tr>
     <tr>
       <th>36</th>
-      <td>36</td>
       <td>OK</td>
       <td>4.0</td>
       <td>18.0</td>
       <td>85000.0</td>
-      <td>91222.222222</td>
+      <td>91222.22</td>
       <td>Paycom</td>
-      <td>0.842429</td>
+      <td>Oklahoma City, OK</td>
+      <td>Software Engineer</td>
+      <td>0.84</td>
+      <td>100898.76</td>
+      <td>108284.82</td>
     </tr>
     <tr>
       <th>37</th>
-      <td>37</td>
       <td>OR</td>
       <td>8.0</td>
       <td>637.0</td>
       <td>133000.0</td>
-      <td>134316.200942</td>
+      <td>134316.20</td>
       <td>Intel</td>
-      <td>1.062083</td>
+      <td>Portland, OR</td>
+      <td>Software Engineer</td>
+      <td>1.06</td>
+      <td>125225.58</td>
+      <td>126464.84</td>
     </tr>
     <tr>
       <th>38</th>
-      <td>38</td>
       <td>PA</td>
       <td>5.0</td>
       <td>480.0</td>
       <td>121500.0</td>
-      <td>122185.416667</td>
+      <td>122185.42</td>
       <td>Comcast</td>
-      <td>0.934520</td>
+      <td>Pittsburgh, PA</td>
+      <td>Software Engineer</td>
+      <td>0.93</td>
+      <td>130013.27</td>
+      <td>130746.71</td>
     </tr>
     <tr>
       <th>39</th>
-      <td>39</td>
       <td>RI</td>
       <td>3.5</td>
       <td>18.0</td>
       <td>103500.0</td>
-      <td>97388.888889</td>
+      <td>97388.89</td>
       <td>CVS Health</td>
-      <td>1.115000</td>
+      <td>Providence, RI</td>
+      <td>Software Engineer</td>
+      <td>1.12</td>
+      <td>92825.11</td>
+      <td>87344.29</td>
     </tr>
     <tr>
       <th>40</th>
-      <td>40</td>
       <td>SC</td>
       <td>5.0</td>
       <td>22.0</td>
       <td>94000.0</td>
-      <td>104090.909091</td>
+      <td>104090.91</td>
       <td>Blackbaud</td>
-      <td>0.934091</td>
+      <td>Charleston, SC</td>
+      <td>Software Engineer</td>
+      <td>0.93</td>
+      <td>100632.60</td>
+      <td>111435.52</td>
     </tr>
     <tr>
       <th>41</th>
-      <td>41</td>
       <td>SD</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>0.935000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.94</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>42</th>
-      <td>42</td>
       <td>TN</td>
       <td>5.0</td>
       <td>79.0</td>
       <td>112000.0</td>
-      <td>107924.050633</td>
+      <td>107924.05</td>
       <td>Amazon</td>
-      <td>0.903929</td>
+      <td>Nashville, TN</td>
+      <td>Software Engineer</td>
+      <td>0.90</td>
+      <td>123903.60</td>
+      <td>119394.45</td>
     </tr>
     <tr>
       <th>43</th>
-      <td>43</td>
       <td>TX</td>
       <td>6.0</td>
       <td>2702.0</td>
       <td>125000.0</td>
-      <td>125189.711325</td>
+      <td>125189.71</td>
       <td>IBM</td>
-      <td>0.910533</td>
+      <td>Austin, TX</td>
+      <td>Software Engineer</td>
+      <td>0.91</td>
+      <td>137282.18</td>
+      <td>137490.53</td>
     </tr>
     <tr>
       <th>44</th>
-      <td>44</td>
       <td>UT</td>
       <td>5.0</td>
       <td>224.0</td>
       <td>120000.0</td>
-      <td>118521.875000</td>
+      <td>118521.88</td>
       <td>Qualtrics</td>
-      <td>0.999600</td>
+      <td>Salt Lake City, UT</td>
+      <td>Software Engineer</td>
+      <td>1.00</td>
+      <td>120048.02</td>
+      <td>118569.30</td>
     </tr>
     <tr>
       <th>45</th>
-      <td>45</td>
       <td>VA</td>
       <td>4.0</td>
       <td>917.0</td>
       <td>125000.0</td>
-      <td>128785.605234</td>
+      <td>128785.61</td>
       <td>Capital One</td>
-      <td>0.947091</td>
+      <td>Arlington, VA</td>
+      <td>Software Engineer</td>
+      <td>0.95</td>
+      <td>131983.11</td>
+      <td>135980.19</td>
     </tr>
     <tr>
       <th>46</th>
-      <td>46</td>
       <td>VT</td>
       <td>7.0</td>
       <td>7.0</td>
       <td>107000.0</td>
-      <td>107428.571429</td>
+      <td>107428.57</td>
       <td>Cox Automotive</td>
-      <td>1.128000</td>
+      <td>Burlington, VT</td>
+      <td>Software Engineer</td>
+      <td>1.13</td>
+      <td>94858.16</td>
+      <td>95238.10</td>
     </tr>
     <tr>
       <th>47</th>
-      <td>47</td>
       <td>WA</td>
       <td>6.0</td>
       <td>12353.0</td>
       <td>145000.0</td>
-      <td>144138.244556</td>
+      <td>144138.24</td>
       <td>Amazon</td>
-      <td>1.070235</td>
+      <td>Seattle, WA</td>
+      <td>Software Engineer</td>
+      <td>1.07</td>
+      <td>135484.23</td>
+      <td>134679.02</td>
     </tr>
     <tr>
       <th>48</th>
-      <td>48</td>
       <td>WI</td>
       <td>3.0</td>
       <td>155.0</td>
       <td>110000.0</td>
-      <td>116329.032258</td>
+      <td>116329.03</td>
       <td>Epic Systems</td>
-      <td>0.913579</td>
+      <td>Madison, WI</td>
+      <td>Software Engineer</td>
+      <td>0.91</td>
+      <td>120405.58</td>
+      <td>127333.31</td>
     </tr>
     <tr>
       <th>49</th>
-      <td>49</td>
       <td>WV</td>
       <td>7.0</td>
       <td>11.0</td>
       <td>86000.0</td>
-      <td>100454.545455</td>
+      <td>100454.55</td>
       <td>Leidos</td>
-      <td>0.836333</td>
+      <td>Morgantown, WV</td>
+      <td>Software Engineer</td>
+      <td>0.84</td>
+      <td>102829.81</td>
+      <td>120113.05</td>
     </tr>
     <tr>
       <th>50</th>
-      <td>50</td>
       <td>WY</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
