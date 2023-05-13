@@ -1,52 +1,51 @@
-,State,yearsofexperience,listings,medianSalary,averageSalary,commonCompany,commonLocation,commonJob,averageCostOfLivingFactor,standardizedMedianSalaries,standardizedAverageSalaries
-0,AK,,0.0,,,,,,1.09,,
-1,AL,5.0,25.0,110000.0,109120.0,Shipt,"Huntsville, AL",Software Engineer,0.89,123088.4,122103.69
-2,AR,5.0,88.0,100000.0,104454.55,Walmart Labs,"Bentonville, AR",Software Engineer,0.86,116228.39,121405.84
-3,AZ,5.0,379.0,112000.0,113055.41,Intel,"Phoenix, AZ",Software Engineer,1.0,111567.68,112619.01
-4,CA,6.0,22824.0,160000.0,161392.88,Google,"San Francisco, CA",Software Engineer,1.26,127239.95,128347.64
-5,CO,6.0,590.0,130000.0,128785.59,Google,"Denver, CO",Software Engineer,1.08,120036.93,118915.6
-6,CT,6.0,106.0,109000.0,115047.17,FactSet,"Hartford, CT",Software Engineer,1.09,100405.31,105975.65
-7,DC,5.0,592.0,130000.0,131646.96,Capital One,"Washington, DC",Software Engineer,1.2,108243.13,109614.45
-8,DE,5.0,59.0,103000.0,107576.27,JPMorgan Chase,"Wilmington, DE",Software Engineer,1.01,101678.18,106195.73
-9,FL,6.0,298.0,112000.0,117117.45,Citrix Systems Inc,"Orlando, FL",Software Engineer,1.01,110601.99,115655.56
-10,GA,5.0,573.0,115000.0,120424.08,Microsoft,"Atlanta, GA",Software Engineer,0.92,125136.02,131038.18
-11,HI,5.0,4.0,149000.0,142000.0,Amazon,"Honolulu, HI",Software Engineer,1.55,96393.34,91864.79
-12,IA,6.0,31.0,104000.0,104903.23,Collins Aerospace,"Des Moines, IA",Software Engineer,0.9,116152.45,117161.22
-13,ID,6.0,45.0,103000.0,115600.0,Micron Technology,"Boise, ID",Software Engineer,0.95,108459.11,121726.92
-14,IL,5.0,885.0,123000.0,124228.81,Accenture,"Chicago, IL",Software Engineer,0.88,139680.14,141075.59
-15,IN,5.5,100.0,96000.0,100870.0,Salesforce,"Indianapolis, IN",Software Engineer,0.87,109965.64,115544.1
-16,KS,7.0,37.0,93000.0,105972.97,Garmin,"Olathe, KS",Software Engineer,0.88,106261.43,121084.29
-17,KY,7.5,24.0,100000.0,108625.0,Humana,"Louisville, KY",Software Engineer,0.88,113407.26,123188.63
-18,LA,5.0,31.0,93000.0,103354.84,IBM,"New Orleans, LA",Software Engineer,0.89,104966.14,116653.32
-19,MA,5.0,1738.0,135000.0,132170.6,Wayfair,"Boston, MA",Software Engineer,1.15,117852.47,115382.45
-20,MD,6.0,105.0,124000.0,124266.67,Northrop Grumman,"Baltimore, MD",Software Engineer,1.01,122626.58,122890.3
-21,ME,5.0,4.0,96500.0,97000.0,Blackhawk Network,"Portland, ME",Software Engineer,1.03,93985.88,94472.85
-22,MI,5.0,218.0,110000.0,113000.92,General Motors,"Detroit, MI",Software Engineer,0.9,122446.71,125787.18
-23,MN,5.0,278.0,119000.0,118758.99,Target,"Minneapolis, MN",Software Engineer,0.98,121287.13,121041.49
-24,MO,5.0,190.0,89000.0,101252.63,Cerner,"Kansas City, MO",Software Engineer,0.88,101401.39,115361.32
-25,MS,2.0,3.0,100000.0,90333.33,ABB,"Mississippi State, MS",Business Analyst,0.86,116324.16,105079.49
-26,MT,8.0,7.0,95000.0,113714.29,Oracle,"Helena, MT",Software Engineer,1.05,90132.83,107888.32
-27,NC,6.0,504.0,123000.0,125559.52,IBM,"Raleigh, NC",Software Engineer,0.92,133928.57,136715.51
-28,ND,4.0,5.0,90000.0,101600.0,AWS,"Fargo, ND",Software Engineer,0.91,98387.54,111068.6
-29,NE,5.0,25.0,105000.0,102800.0,Mutual of Omaha,"Omaha, NE",Software Engineer,0.92,113965.27,111577.42
-30,NH,5.0,35.0,111000.0,105685.71,Oracle,"Nashua, NH",Software Engineer,1.06,105138.53,100104.87
-31,NJ,5.0,460.0,130000.0,133928.26,JPMorgan Chase,"Jersey City, NJ",Software Engineer,1.03,125725.34,129524.43
-32,NM,4.5,10.0,119500.0,116300.0,Sandia National Labs,"Albuquerque, NM",Software Engineer,0.91,131862.07,128331.03
-33,NV,4.0,24.0,110000.0,108166.67,Zappos,"Las Vegas, NV",Software Engineer,1.04,106075.22,104307.3
-34,NY,5.0,4715.0,152000.0,153596.45,Bloomberg,"New York, NY",Software Engineer,0.97,156638.23,158283.39
-35,OH,5.5,202.0,105000.0,109955.45,JPMorgan Chase,"Columbus, OH",Software Engineer,0.89,118237.19,123817.36
-36,OK,4.0,18.0,85000.0,91222.22,Paycom,"Oklahoma City, OK",Software Engineer,0.84,100898.76,108284.82
-37,OR,8.0,637.0,133000.0,134316.2,Intel,"Portland, OR",Software Engineer,1.06,125225.58,126464.84
-38,PA,5.0,480.0,121500.0,122185.42,Comcast,"Pittsburgh, PA",Software Engineer,0.93,130013.27,130746.71
-39,RI,3.5,18.0,103500.0,97388.89,CVS Health,"Providence, RI",Software Engineer,1.12,92825.11,87344.29
-40,SC,5.0,22.0,94000.0,104090.91,Blackbaud,"Charleston, SC",Software Engineer,0.93,100632.6,111435.52
-41,SD,,0.0,,,,,,0.94,,
-42,TN,5.0,79.0,112000.0,107924.05,Amazon,"Nashville, TN",Software Engineer,0.9,123903.6,119394.45
-43,TX,6.0,2702.0,125000.0,125189.71,IBM,"Austin, TX",Software Engineer,0.91,137282.18,137490.53
-44,UT,5.0,224.0,120000.0,118521.88,Qualtrics,"Salt Lake City, UT",Software Engineer,1.0,120048.02,118569.3
-45,VA,4.0,917.0,125000.0,128785.61,Capital One,"Arlington, VA",Software Engineer,0.95,131983.11,135980.19
-46,VT,7.0,7.0,107000.0,107428.57,Cox Automotive,"Burlington, VT",Software Engineer,1.13,94858.16,95238.1
-47,WA,6.0,12353.0,145000.0,144138.24,Amazon,"Seattle, WA",Software Engineer,1.07,135484.23,134679.02
-48,WI,3.0,155.0,110000.0,116329.03,Epic Systems,"Madison, WI",Software Engineer,0.91,120405.58,127333.31
-49,WV,7.0,11.0,86000.0,100454.55,Leidos,"Morgantown, WV",Software Engineer,0.84,102829.81,120113.05
-50,WY,,,,,,,,,,
+,State,yearsofexperience,listings,medianSalary,averageSalary,commonCompany,commonLocation,commonJob,averageCostOfLivingFactor,standardizedMedianSalaries,standardizedAverageSalaries,latitude,longitude
+0,AL,5.0,24.0,116000.0,113666.67,Shipt,"Huntsville, AL",Software Engineer,0.89,129802.31,127191.35,32.38,-86.3
+1,AK,,0.0,,,,,,1.09,,,58.3,-134.42
+2,AZ,5.0,372.0,112000.0,115182.8,Intel,"Phoenix, AZ",Software Engineer,1.0,111567.68,114738.19,33.45,-112.1
+3,AR,5.0,86.0,100000.0,106883.72,Walmart Labs,"Bentonville, AR",Software Engineer,0.86,116228.39,124229.23,34.75,-92.29
+4,CA,6.0,21820.0,160000.0,168819.03,Google,"San Francisco, CA",Software Engineer,1.26,127239.95,134253.28,38.58,-121.49
+5,CO,6.0,566.0,132000.0,134246.47,Google,"Denver, CO",Software Engineer,1.08,121883.66,123957.96,39.74,-104.98
+6,CT,5.5,104.0,110000.0,117259.62,FactSet,"Hartford, CT",Software Engineer,1.09,101326.46,108013.65,41.76,-72.68
+7,DE,5.0,57.0,106000.0,111350.88,JPMorgan Chase,"Wilmington, DE",Software Engineer,1.01,104639.68,109921.89,39.16,-75.52
+8,FL,6.0,291.0,116000.0,119934.71,Citrix Systems Inc,"Orlando, FL",Software Engineer,1.01,114552.06,118437.66,21.31,-157.86
+9,GA,5.0,565.0,117000.0,122129.2,Microsoft,"Atlanta, GA",Software Engineer,0.92,127312.3,132893.58,30.44,-84.28
+10,HI,5.0,4.0,149000.0,142000.0,Amazon,"Honolulu, HI",Software Engineer,1.55,96393.34,91864.79,33.75,-84.39
+11,ID,6.0,45.0,103000.0,115600.0,Micron Technology,"Boise, ID",Software Engineer,0.95,108459.11,121726.92,43.62,-116.2
+12,IL,5.0,860.0,125000.0,127840.12,Accenture,"Chicago, IL",Software Engineer,0.88,141951.36,145176.62,39.8,-89.65
+13,IN,5.0,92.0,100000.0,109641.3,Salesforce,"Indianapolis, IN",Software Engineer,0.87,114547.54,125591.41,39.77,-86.16
+14,IA,6.0,30.0,104500.0,108400.0,Collins Aerospace,"Des Moines, IA",Software Engineer,0.9,116710.88,121066.59,41.59,-93.6
+15,KS,7.0,37.0,93000.0,105972.97,Garmin,"Olathe, KS",Software Engineer,0.88,106261.43,121084.29,39.05,-95.68
+16,KY,7.5,24.0,100000.0,108625.0,Humana,"Louisville, KY",Software Engineer,0.88,113407.26,123188.63,38.19,-84.88
+17,LA,5.0,31.0,93000.0,103354.84,IBM,"New Orleans, LA",Software Engineer,0.89,104966.14,116653.32,30.46,-91.19
+18,ME,5.0,4.0,96500.0,97000.0,Blackhawk Network,"Portland, ME",Software Engineer,1.03,93985.88,94472.85,44.31,-69.78
+19,MD,6.0,102.0,125000.0,127921.57,Northrop Grumman,"Baltimore, MD",Software Engineer,1.01,123615.51,126504.72,38.98,-76.49
+20,MA,5.0,1669.0,135000.0,137634.81,Wayfair,"Boston, MA",Software Engineer,1.15,117852.47,120152.61,42.36,-71.06
+21,MI,5.0,214.0,110000.0,115113.08,General Motors,"Detroit, MI",Software Engineer,0.9,122446.71,128138.35,42.73,-84.56
+22,MN,5.0,270.0,120000.0,122277.78,Target,"Minneapolis, MN",Software Engineer,0.98,122306.35,124627.9,44.96,-93.1
+23,MS,2.0,3.0,100000.0,90333.33,ABB,"Mississippi State, MS",Business Analyst,0.86,116324.16,105079.49,32.3,-90.18
+24,MO,5.0,188.0,90000.0,102329.79,Cerner,"Kansas City, MO",Software Engineer,0.88,102540.73,116588.57,38.58,-92.17
+25,MT,8.0,7.0,95000.0,113714.29,Oracle,"Helena, MT",Software Engineer,1.05,90132.83,107888.32,46.59,-112.02
+26,NE,5.0,25.0,105000.0,102800.0,Mutual of Omaha,"Omaha, NE",Software Engineer,0.92,113965.27,111577.42,40.81,-96.7
+27,NV,4.5,22.0,114500.0,118000.0,Zappos,"Las Vegas, NV",Software Engineer,1.04,110414.66,113789.78,39.16,-119.77
+28,NH,5.0,34.0,112000.0,108794.12,Oracle,"Nashua, NH",Software Engineer,1.06,106085.72,103049.13,43.21,-71.54
+29,NJ,5.0,456.0,130000.0,135103.07,JPMorgan Chase,"Jersey City, NJ",Software Engineer,1.03,125725.34,130660.61,40.22,-74.77
+30,NM,4.5,10.0,119500.0,116300.0,Sandia National Labs,"Albuquerque, NM",Software Engineer,0.91,131862.07,128331.03,35.68,-105.94
+31,NY,5.0,4580.0,155000.0,158123.85,Bloomberg,"New York, NY",Software Engineer,0.97,159729.78,162948.95,42.65,-73.76
+32,NC,6.0,490.0,125000.0,129146.94,IBM,"Raleigh, NC",Software Engineer,0.92,136106.27,140621.67,35.78,-78.64
+33,ND,4.0,5.0,90000.0,101600.0,AWS,"Fargo, ND",Software Engineer,0.91,98387.54,111068.6,46.82,-100.78
+34,OH,5.5,198.0,105500.0,112176.77,JPMorgan Chase,"Columbus, OH",Software Engineer,0.89,118800.23,126318.72,39.96,-83.0
+35,OK,4.0,18.0,85000.0,91222.22,Paycom,"Oklahoma City, OK",Software Engineer,0.84,100898.76,108284.82,35.49,-97.5
+36,OR,8.0,619.0,135000.0,138222.0,Intel,"Portland, OR",Software Engineer,1.06,127108.67,130142.33,44.94,-123.03
+37,PA,5.0,470.0,125000.0,124785.11,Comcast,"Philadelphia, PA",Software Engineer,0.93,133758.51,133528.56,40.26,-76.88
+38,RI,4.0,17.0,105000.0,103117.65,CVS Health,"Providence, RI",Software Engineer,1.12,94170.4,92482.19,41.83,-71.41
+39,SC,5.0,22.0,94000.0,104090.91,Blackbaud,"Charleston, SC",Software Engineer,0.93,100632.6,111435.52,34.0,-81.03
+40,SD,,0.0,,,,,,0.94,,,44.37,-100.35
+41,TN,5.0,77.0,114000.0,110727.27,Amazon,"Nashville, TN",Software Engineer,0.9,126116.16,122495.6,36.17,-86.78
+42,TX,6.0,2631.0,125000.0,128568.07,Amazon,"Austin, TX",Software Engineer,0.91,137282.18,141200.84,30.27,-97.74
+43,UT,5.0,222.0,120000.0,119589.64,Qualtrics,"Salt Lake City, UT",Software Engineer,1.0,120048.02,119637.49,40.78,-111.89
+44,VT,7.0,7.0,107000.0,107428.57,Cox Automotive,"Burlington, VT",Software Engineer,1.13,94858.16,95238.1,44.26,-72.58
+45,VA,4.0,900.0,125000.0,131218.22,Capital One,"Arlington, VA",Software Engineer,0.95,131983.11,138548.71,37.54,-77.43
+46,WA,6.0,11774.0,149000.0,151226.41,Amazon,"Seattle, WA",Software Engineer,1.07,139221.72,141302.02,47.04,-122.91
+47,WV,7.0,11.0,86000.0,100454.55,Leidos,"Morgantown, WV",Software Engineer,0.84,102829.81,120113.05,38.34,-81.61
+48,WI,3.0,150.0,110000.0,120206.67,Epic Systems,"Madison, WI",Software Engineer,0.91,120405.58,131577.75,43.07,-89.38
+49,WY,7.0,1.0,131000.0,131000.0,Microsoft,"Cheyenne, WY",Software Engineer,0.96,137100.99,137100.99,41.14,-104.82

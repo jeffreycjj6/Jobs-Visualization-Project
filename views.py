@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from geopy.geocoders import Nominatim
+
 #views and webapp cannot be placed inside data_analysis folder for some reason, so data reading requires different locations
 #index_col = 0 to remove the unamed initial column that shows index
 df = pd.read_csv('data_analysis/mainData.csv', index_col = 0)
@@ -50,6 +52,15 @@ def info():
     df = df[df['state'] == currStateInitials]
     dfStates = dfStates[dfStates['State'] == currStateInitials]
     js = df['title'].value_counts()
+
+    '''geolocater = Nominatim(user_agent="MyApp", timeout=None)
+    df['extraLocation'] = geolocater.geocode(df['location'])
+
+    for index, row in df.iterrows():
+        #Row is the current row of the df, currentCity simply isolates it to that row only
+        currentCity = row['location']
+        location = geolocater.geocode(currentCity)
+        df.at[index, 'extraLocation'] = location'''
 
     # Use this def info to generate the html page for each individual state
     return render_template("state.html", state=currState, stateData=dfStates, stateJobs = df, jobSeries = js, stateJobsHTML=(df.to_html()), stateImageURL=image)
