@@ -51,7 +51,8 @@ def info():
     currStateInitials = states.get(str(currState))
     df = df[df['state'] == currStateInitials]
     dfStates = dfStates[dfStates['State'] == currStateInitials]
-    js = df['title'].value_counts()
+    js = df['title'].value_counts().to_frame(name='Listings Found')
+    ls = df['location'].value_counts().to_frame(name='Occurences')
 
     '''geolocater = Nominatim(user_agent="MyApp", timeout=None)
     df['extraLocation'] = geolocater.geocode(df['location'])
@@ -63,7 +64,7 @@ def info():
         df.at[index, 'extraLocation'] = location'''
 
     # Use this def info to generate the html page for each individual state
-    return render_template("state.html", state=currState, stateData=dfStates, stateJobs = df, jobSeries = js, stateJobsHTML=(df.to_html()), stateImageURL=image)
+    return render_template("state.html", state=currState, stateData=dfStates, stateJobs = df, locationSeries = ls.to_html(), jobSeries = js.to_html(), stateJobsHTML=(df.to_html()), stateImageURL=image)
 
 @data.route("/jobdata")
 def jobdata():
