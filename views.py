@@ -45,7 +45,7 @@ def info():
     currState = args.get('state')
 
     #Generate a dynamic state image by casting the curr state's name to a string and making it into a file directory
-    image = "stateimages/" + str(currState) + ".jpg"
+    image = "stateheatmaps/" + str(currState) + ".html"
 
     #Uses the initials of the state to reduce the dataframes to only be of the current state
     currStateInitials = states.get(str(currState))
@@ -73,3 +73,11 @@ def jobdata():
 @data.route("/aggregatedata")
 def aggregatedata():
     return render_template("aggregateData.html")
+
+@data.route("/credits")
+def credits():
+    return render_template("credits.html")
+
+@data.route("/moredata")
+def moredata():
+    return render_template("moredata.html")

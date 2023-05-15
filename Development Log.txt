@@ -48,3 +48,22 @@ Development Log - Jeff C.
     - This was done by applying a dictionary of coordinates for each city for the regular job entires
     - While an external CSV of capital city coordinates was used for aggregate
 - Began framework for Choropleth plotting with that data
+
+5/14/2023
+- Added actual heat maps for each state
+    - This is done using Python's folium
+        - Heatmaps are generated in a 3 step process:
+            - First a dataframe of each city with the number of jobs it holds is created
+            - Then, a coordinate pair (latitude, longitude) is mapped to those cities
+            - Using the folium heatmap function, an interactive map is generated showing where those jobs are most concentrated
+        - This heatmap is then saved into an html file and displayed dynamically through the state.html page
+- Completed additional data cleanup where some coordinates were misplaced and off
+- Added half finished credits page
+- Began a more data page that will showcase the whole USA's heat map alongside a way to look at choropleth maps of specific jobs across the USA
+    - This may be done with a search bar or text input that redirects to a page that displays a specific choropleth map
+- Deleted unused files such as Alabama.jpg
+- To-Do:
+    - Add a general site design through CSS
+        - Add a possible home page button for all HTML pages
+    - Complete the "more data" page
+    - Clean Up Data Analysis Code
