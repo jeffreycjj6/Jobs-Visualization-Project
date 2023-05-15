@@ -12,10 +12,12 @@
             h1 {text-align:center;}
             p {text-align: center;}
             div {text-align: center;}
+            a {text-align: center;}
         </style>
         {% block content %}
         <h1>STEM Jobs Map</h1>
         <p>Click on the state you want to investigate.</p>
+        <a href="/moredata">Additional Maps and Data</a>
         {% endblock %}
     </div>
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -24,6 +26,10 @@
         <!-- <title>Blank map of the United States, territories not included</title> -->
         <defs>
         <style type="text/css">
+
+        a {
+            text-align: center;
+        }
         .state {
             fill:#D0D0D0;
             /*justify-content: center;
@@ -718,6 +724,12 @@
         <path class="separator1" fill="none" d="m 215,493 v 55 l 36,45 m -251,-168 h 147 l 68,68 h 85 l 54,54 v 46"/>
 
     </svg>
+    </div>
+    <div>
+        <style>
+            a {text-align: right;}
+        </style>
+        <a href="/credits">Credits and Sources</a>
     </div>
 </body>
 </html>
