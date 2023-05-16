@@ -38,12 +38,12 @@ form {
 
 
 .btn {
-    background-color: rgb(73, 181, 207); /* Blue background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 4px 4px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
+    background-color: rgb(73, 181, 207);
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    font-size: 16px;
+    cursor: pointer;
     margin: 0px;
   }
   
