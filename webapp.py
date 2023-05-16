@@ -1,7 +1,6 @@
 from flask import Flask
 from views import test, data
 
-#from views import test #imports test variable from the views.py file
 
 #Initializes the website application
 #Also registers all the possible links from the home page based on the URL

@@ -81,3 +81,9 @@ Development Log - Jeff C.
     - Also added messages for states with no jobs like South Dakota or Alaska
 - Finalized credits and sources page
 - Fixed some formatting across some site pages
+
+5/16/2023
+- Fixed issue where heat maps were displayed starting at the city with the most Occurences
+    - This happened due to a simple error in the code where the location was being assigned to the index 0 of the heat map dataframe
+- Added code comments and cleaned up some parts of the code
+- Adjusted credits
