@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credits and Sources</title>
-    <style>
+    <!-- <style>
         p {
             text-align: center;
         }
@@ -18,25 +18,36 @@
         b {
             text-align: center;
         }
-    </style>
+    </style> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css') }}" type="text/css" >
 </head>
 <body>
+    <a href="/">
+    <button class="btn"><i class="fa fa-home"> Home</i></button>
+    </a>
     <h1>Data Sources and Tools:</h1>
-    <p>Python Libraries = Pandas, Flask, GeoPandas, Folium</p>
+    <p>Python Libraries = Pandas, Seaborn, MatPlotLib, Flask, GeoPandas, Folium</p>
+    <p>Main Job Dataframe: https://www.kaggle.com/datasets/jackogozaly/data-science-and-stem-salaries</p>
+    <p>Cost of Living Index: https://advisorsmith.com/data/coli/</p>
+    <p>USA Map SVG: https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg</p>
+    <p>USA Map Json: https://github.com/PublicaMundi/MappingAPI/blob/master/data/geojson/us-states.json</p>
+    <p>Geographic State Centers: https://gist.github.com/rozanecm/29926a7c8132a0a25e3b12a24abdff86</p>
     <a href=""></a>
 
     <h1>Project Credits:</h1>
     <p>This project was made for Data Science @ Georgia Tech: Bootcamp Spring 2023</p>
 
     <p><b>- Data Manipulation - </b></p>
-    <p>Main Data Preprocessing: Jaden Lim, Euan Chen</p>
-    <p>Aggregate Dataframe: Jeff Chow </p>
-    <p>Applying Additional Elements (Coordinates, Standard of Living): Jeff Chow </p>
+    <p>Original Dataframe Cleaning: Jaden Lim, Yu-An Chen</p>
+    <p>Aggregate Dataframe Creation: Jeff Chow </p>
+    <p>Applying Additional Elements (Coordinates + Standard of Living): Jeff Chow </p>
 
     <p><b>- Web Application Creation -</b></p>
     <p>Flask Application: Jeff Chow</p>
     <p>HTML Pages: Jeff Chow</p>
-    <p>Data Visualization (Heat Maps, Choropleth): Jeff Chow</p>
+    <p>Heat Map Implementations: Jeff Chow</p>
+    <p>Choropleth Generator: Jeff Chow</p>
 
     <p><b>- Project Milestone Assignments -</b></p>
     <p>Milestone 1: Jeff Chow, Jaden Lim</p>

@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{state}}</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css') }}" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <a href="/">
+    <button class="btn"><i class="fa fa-home"> Home</i></button>
+    </a>
     <h1>This is {{state}}</h1>
     <!-- <img src="{{url_for('static', filename=stateImageURL) }}" height = 400px class = centeredImage> -->
     <iframe src="{{url_for('static', filename=stateImageURL) }}" height = 384px width = 640px class = centeredImage></iframe>
     <p>Factoring most cities together, living here costs roughly {{stateData.iloc[0]['averageCostOfLivingFactor']}}x times the national average. </p>
-    <p>Number of Jobs Found: {{stateData.iloc[0]['listings']}} </p>
-    <p>Salaries (Nationally Stardardized): [Median = ${{stateData.iloc[0]['standardizedMedianSalaries']}}] | [Average = ${{stateData.iloc[0]['standardizedAverageSalaries']}}]</p>
-    <p>Salaries (State Relative): [Median = ${{stateData.iloc[0]['medianSalary']}}] | [Average = ${{stateData.iloc[0]['averageSalary']}}]</p>
-    <p>Company With The Most Listings: {{stateData.iloc[0]['commonCompany']}}</p>
-    <p>Most Common Jobs:</p>
-    {{jobSeries | safe}}
+    {% if stateData.iloc[0]['listings'] > 0%}
+        <p>Number of Jobs Found: {{stateData.iloc[0]['listings']}} </p>
+        <p>Salaries (Nationally Stardardized): [Median = ${{stateData.iloc[0]['standardizedMedianSalaries']}}] | [Average = ${{stateData.iloc[0]['standardizedAverageSalaries']}}]</p>
+        <p>Salaries (State Relative): [Median = ${{stateData.iloc[0]['medianSalary']}}] | [Average = ${{stateData.iloc[0]['averageSalary']}}]</p>
+        <p>Company With The Most Listings: {{stateData.iloc[0]['commonCompany']}}</p>
+        <p>Most Common Jobs:</p>
+        {{jobSeries | safe}}
 
-    
-    <p>Cities by Listings:</p>
-    {{locationSeries | safe}} 
+        
+        <p>Cities by Listings:</p>
+        {{locationSeries | safe}} 
 
-    <!-- Since stateJobs is already an html file that was passed in, it can just be placed like so
-    there is no need to convert a dataframe to html here or use a jinja loop -->
-    <p>Table of All Job Listings Found:</p>
-    {{stateJobsHTML | safe}}
-
+        <!-- Since stateJobs is already an html file that was passed in, it can just be placed like so
+        there is no need to convert a dataframe to html here or use a jinja loop -->
+        <p>Table of All Job Listings Found:</p>
+        {{stateJobsHTML | safe}}
+    {% else %}
+        <p>Unfortunately, {{state}} doesn't seem to have any related job listings.</p>
+    {% endif %}
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choropleth Maps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css') }}" type="text/css" >
+</head>
+<body>
+    <a href="/">
+        <button class="btn"><i class="fa fa-home"> Home</i></button>
+    </a>
+    <h1>Generate a Job-Specific Choropleth Map!</h1>
+    <form method="POST">
+        Job Title (capitalize first letters):
+        <input name="title">
+        <p></p>
+        Map Type (1 = found listings count, 2 = percent of that job in state):
+        <input name="type" type="number" max=2 min=1>
+        <p></p>
+        Color Shading Scale (only for Map Type 1) (1 = original scale, 9 = most reduced scale):
+        <input name="scale" type="number" max=9 min=1>
+        <p></p>
+        <input type="submit">
+    </form>
+    <p><b>Table of All Possible Job Inputs (alongside their total counts):</b></p>
+    {{allJobs | safe}} 
+    <p><b>Color Shading Scale Explanation:</b></p>
+    <p>The color shading scale indicates a divisor for the max number of job entries for that type. It is used to allow more states to show color.</p>
+    <p>Higher numbers mean lower overall maximums, causing colors to be scaled down and more similar between states.</p>
+    <p>This is done to prevent states such as California from consistently raising color thresholds and causing less dominate states from having any color.</p>
+    <p>Typically, lower values should be used for less popular jobs and higher values for more common jobs to get better visual map information at the cost of the true listings count.</p>
+    <p>A value of 1 is the original unaltered scale, where each state is colored exactly as it should be based on how many jobs of that type it truly has. </p>
+    <!--<form method="POST">
+        Input Color Shading Scale:
+        <input name="scale">
+        <input type="submit">
+    </form>-->
+</body>
+</html>

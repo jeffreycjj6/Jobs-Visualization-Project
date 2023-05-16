@@ -23,9 +23,31 @@ table {
     margin-right: auto;
 }
 
+form {
+    text-align: center;
+}
+
 /*creates a class for centered images that are used in state.html*/
 .centeredImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Style buttons */
+
+
+.btn {
+    background-color: rgb(73, 181, 207); /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 4px 4px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin: 0px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(120, 224, 151);
+    transition: 0.6s;
+  }

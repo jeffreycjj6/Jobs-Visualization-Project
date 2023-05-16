@@ -67,3 +67,17 @@ Development Log - Jeff C.
         - Add a possible home page button for all HTML pages
     - Complete the "more data" page
     - Clean Up Data Analysis Code
+
+5/15/2023
+- Aded Choropleth Generator
+    - Used HTML form input to look at specific job titles and generates a geopandas dataframe from that
+    - Added an input that adjusts the map to be either percent based or count based
+        - For count based choropleths, a scale factor was also created to have better visualization due to large job count differences
+    - Saved as jpg files that dynamically update based on the inputted job
+- Added Salary Choropleth
+    - Done in data_analysis to create fixed salary maps using geopandas
+    - Process is the same as Choropleth generator, take a column from aggregate data and map it to the us json file.
+- Finalized state colors on homepage
+    - Also added messages for states with no jobs like South Dakota or Alaska
+- Finalized credits and sources page
+- Fixed some formatting across some site pages
