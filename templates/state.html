@@ -15,12 +15,12 @@
     <h1>This is {{state}}</h1>
     <!-- <img src="{{url_for('static', filename=stateImageURL) }}" height = 400px class = centeredImage> -->
     <iframe src="{{url_for('static', filename=stateImageURL) }}" height = 384px width = 640px class = centeredImage></iframe>
-    <p>Factoring most cities together, living here costs roughly {{stateData.iloc[0]['averageCostOfLivingFactor']}}x times the national average. </p>
+    <p>Factoring most cities together, living here costs roughly <b>{{stateData.iloc[0]['averageCostOfLivingFactor']}}x</b> times the national average. </p>
     {% if stateData.iloc[0]['listings'] > 0%}
-        <p>Number of Jobs Found: {{stateData.iloc[0]['listings']}} </p>
-        <p>Salaries (Nationally Stardardized): [Median = ${{stateData.iloc[0]['standardizedMedianSalaries']}}] | [Average = ${{stateData.iloc[0]['standardizedAverageSalaries']}}]</p>
-        <p>Salaries (State Relative): [Median = ${{stateData.iloc[0]['medianSalary']}}] | [Average = ${{stateData.iloc[0]['averageSalary']}}]</p>
-        <p>Company With The Most Listings: {{stateData.iloc[0]['commonCompany']}}</p>
+        <p>Number of Jobs Found: <b>{{stateData.iloc[0]['listings']}} </b></p>
+        <p>Salaries (Nationally Stardardized): <b>[Median = ${{stateData.iloc[0]['standardizedMedianSalaries']}}] | [Average = ${{stateData.iloc[0]['standardizedAverageSalaries']}}]</b></p>
+        <p>Salaries (State Relative): <b>[Median = ${{stateData.iloc[0]['medianSalary']}}] | [Average = ${{stateData.iloc[0]['averageSalary']}}]</b></p>
+        <p>Company With The Most Listings: <b>{{stateData.iloc[0]['commonCompany']}}</b></p>
         <p>Most Common Jobs:</p>
         {{jobSeries | safe}}
 
