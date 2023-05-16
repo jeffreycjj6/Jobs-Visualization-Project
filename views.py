@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import geopandas as gpd
 
 from geopy.geocoders import Nominatim
 
@@ -23,7 +24,7 @@ states = {
 states = {v: k for k, v in states.items()}
 
 
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect, url_for
 #%store -r dfStates
 
 
@@ -81,3 +82,142 @@ def credits():
 @data.route("/moredata")
 def moredata():
     return render_template("moredata.html")
+
+@data.route("/salarymaps")
+def salarymaps():
+    return render_template("salarymaps.html")
+
+@data.route("/choropleth", methods=["POST", "GET"])
+def choropleth():
+    if request.method == "POST":
+        title = request.form.get("title")
+        scaleVal = request.form.get("scale")
+        mapType = request.form.get("type")
+        if title == '' or mapType == '' or mapType == 0:
+            return render_template("errorpage.html")
+        if scaleVal == '': #default scaleVal or for a percentage map
+            scaleVal = 1
+        return redirect(url_for('data.choroplethMap', job=title, scale=scaleVal, mpType=mapType))
+    else:
+        copy = pd.read_csv('data_analysis/mainData.csv', index_col = 0)
+        allJ = copy['title'].value_counts().to_frame(name='Occurences')
+        return render_template("choroplethPage.html", allJobs=allJ.to_html())
+
+
+@data.route("/choropleth/<job><scale><mpType>")
+def choroplethMap(job, scale, mpType):
+    #args = request.args
+    #job = args.get('jobtitle')
+    
+    states3 = [
+    'AL',
+    'AK',
+    'AZ',
+    'AR',
+    'CA',
+    'CO',
+    'CT',
+    'DE',
+    'FL',
+    'GA',
+    'HI',
+    'ID',
+    'IL',
+    'IN',
+    'IA',
+    'KS',
+    'KY',
+    'LA',
+    'ME',
+    'MD',
+    'MA',
+    'MI',
+    'MN',
+    'MS',
+    'MO',
+    'MT',
+    'NE',
+    'NV',
+    'NH',
+    'NJ',
+    'NM',
+    'NY',
+    'NC',
+    'ND',
+    'OH',
+    'OK',
+    'OR',
+    'PA',
+    'RI',
+    'SC',
+    'SD',
+    'TN',
+    'TX',
+    'UT',
+    'VT',
+    'VA',
+    'WA',
+    'WV',
+    'WI',
+    'WY'
+    ]
+    usa = gpd.read_file("data_analysis/us-states.json")
+    usa.plot()
+
+    if int(mpType) == 1:
+        jobType = pd.DataFrame()
+        for i in range(50):
+            #drop all states except for the current one
+            #iterate through the new reduced-state-specific job dataframe
+            #then drop all entries except for the current job type being analyzed
+            reducedJobDataframe = df[df['state'] == states3[i]]
+            reducedJobDataframe = reducedJobDataframe[reducedJobDataframe['title'] == job] #testing business analyst
+            jobType.loc[i, 'listings'] = len(reducedJobDataframe.index) #assign the number of entires found
+
+
+        usa['listings'] = jobType['listings']
+        usa = usa[~usa['name'].isin(['Alaska', 'Hawaii'])]
+
+        numListings = usa['listings'].max()
+        if numListings == 0:
+            return render_template("errorpage.html")
+        #scale = 1
+        ax = usa.boundary.plot(edgecolor='gray', linewidth=0.3, figsize=(15.36,10.24))
+        ax.set_title('Total ' + str(job) + ' Job Listings Across US States', size=15, weight='bold')
+        usa.plot(ax=ax, vmax=numListings/int(scale), column='listings', cmap='YlGn', legend=True, legend_kwds={'shrink':1, 'orientation':'horizontal'})
+
+        imageName = "static/usachoroplethmaps/" + str(job) + ".jpg"
+        plt.savefig(imageName)
+        imageName = "usachoroplethmaps/" + str(job) + ".jpg" #need to reupdate name to remove static so that html displays correctly
+
+        return render_template("choroplethMap.html", imageSRC=imageName, jobTitle=job, maxListings=(numListings/int(scale)).round(), theType = mpType)
+    else:
+        jobType = pd.DataFrame()
+        for i in range(50):
+            #drop all states except for the current one
+            #iterate through the new reduced-state-specific job dataframe
+            #then drop all entries except for the current job type being analyzed
+            reducedJobDataframe = df[df['state'] == states3[i]]
+            totalStateJobs = len(reducedJobDataframe.index)
+            reducedJobDataframe = reducedJobDataframe[reducedJobDataframe['title'] == job]
+            if totalStateJobs == 0:
+                jobType.loc[i, 'listings'] = 0
+            else:
+                jobType.loc[i, 'listings'] = (len(reducedJobDataframe.index) / totalStateJobs) * 100 #generate job percentage
+
+
+        usa['listings'] = jobType['listings']
+        usa = usa[~usa['name'].isin(['Alaska', 'Hawaii'])]
+
+        numListings = usa['listings'].max()
+        if numListings == 0:
+            return render_template("errorpage.html")
+        ax = usa.boundary.plot(edgecolor='gray', linewidth=0.3, figsize=(15.36,10.24))
+        ax.set_title('Percent of ' + str(job) + ' Jobs Within US States', size=16, weight='bold')
+        usa.plot(ax=ax, column='listings', cmap='YlGn', legend=True, legend_kwds={'shrink':1, 'orientation':'horizontal', 'format': '%.1f%%'})
+
+        imageName = "static/usachoroplethmaps/" + str(job) + ".jpg"
+        plt.savefig(imageName)
+        imageName = "usachoroplethmaps/" + str(job) + ".jpg" #need to reupdate name to remove static so that html displays correctly
+
+        return render_template("choroplethMap.html", imageSRC=imageName, jobTitle=job, maxListings=str(numListings.round()) + "%", theType = mpType)

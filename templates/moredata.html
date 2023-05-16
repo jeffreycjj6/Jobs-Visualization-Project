@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Additional Maps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css') }}" type="text/css" >
 </head>
 <body>
-    <p>Testing</p>
+    <a href="/">
+        <button class="btn"><i class="fa fa-home"> Home</i></button>
+    </a>
+    <div>
+        <style>a{text-align: center;}</style>
+        <a href="/aggregatedata"> Complete Aggregate Data Table |</a>
+        <a href="/jobdata">| Complete Job Listings Data Table</a>
+    </div>
+    <p>The map below depicts a geographic heat map of all the jobs found from the main dataframe. Zoom in to view heat map markers in greater detail.</p>
+    <p>Note: Differences between smaller-same color points (such as Atlanta, GA vs. Roswell, GA) may be slightly inaccurate than appears due to the country-wide scale. Check state versions for a better scale.</p>
+    <iframe src="{{url_for('static', filename='usaHeatMap.html') }}" height = 575 width = 1250px class = centeredImage></iframe>
 </body>
 </html>

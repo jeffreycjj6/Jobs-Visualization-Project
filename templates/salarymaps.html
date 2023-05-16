@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css') }}" type="text/css" >
+</head>
+<body>
+    <a href="/">
+        <button class="btn"><i class="fa fa-home"> Home</i></button>
+    </a>
+    <h1>Salary Choropleth Maps Across The USA</h1>
+    <p>Scroll down to see average salary, median salary, and their standardized versions.</p>
+    <img src="{{url_for('static', filename='salarymaps/standardaveragesalary.jpg')}}" height=640px class=centeredImage>
+    <img src="{{url_for('static', filename='salarymaps/rawaveragesalary.jpg')}}" height=640px class=centeredImage>
+    <img src="{{url_for('static', filename='salarymaps/standardmediansalary.jpg')}}" height=640px class=centeredImage>
+    <img src="{{url_for('static', filename='salarymaps/rawmediansalary.jpg')}}" height=640px class=centeredImage>
+</body>
+</html>

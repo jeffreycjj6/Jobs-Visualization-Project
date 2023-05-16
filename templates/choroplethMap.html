@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{jobTitle}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css') }}" type="text/css" >
+</head>
+<body>
+    <a href="/">
+        <button class="btn"><i class="fa fa-home"> Home</i></button>
+    </a>
+    <p>This is a Choropleth Map for <b>{{jobTitle}}</b> jobs across the USA. The darker the color, the more that state contains of that job.</p>
+    <p>The color shading scale reaches a max at <b>{{maxListings}}</b> jobs.</p>
+    <img src="{{url_for('static', filename=imageSRC)}}" height=640px class=centeredImage>
+    <!-- <img src="{{url_for('static', filename=stateImageURL) }}" height = 400px class = centeredImage> -->
+</body>
+</html>

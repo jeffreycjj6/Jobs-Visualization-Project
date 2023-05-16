@@ -15,9 +15,11 @@
             a {text-align: center;}
         </style>
         {% block content %}
-        <h1>STEM Jobs Map</h1>
-        <p>Click on the state you want to investigate.</p>
-        <a href="/moredata">Additional Maps and Data</a>
+        <h1>CS and CS-Related Jobs Map</h1>
+        <p>Click on the state you want to investigate or one of the additional maps below.</p>
+        <a href="/moredata">USA Heat Map and Data  /</a>
+        <a href="/choropleth">/  Choropleth Job Search Map Generator /</a>
+        <a href="/salarymaps">/  Choropleth Salary Maps</a>
         {% endblock %}
     </div>
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -93,242 +95,376 @@
         
         .ar {
             fill:#D0D0D0;
-            position: absolute;
-            transition: 0.5s;
-            transform-origin: center;
-            transform-box: fill-box;
         }
         .ar:hover {
-            transform: scale(1.75, 1.75);
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ca {
+            fill:#D0D0D0;
+        }
         .ca:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .co {
+            fill:#D0D0D0;
+        }
         .co:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ct {
+            fill:#D0D0D0;
+        }
         .ct:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .de {
+            fill:#D0D0D0;
+        }
         .de:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .fl {
+            fill:#D0D0D0;
+        }
         .fl:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ga {
+            fill:#D0D0D0;
+        }
         .ga:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .hi {
+            fill:#D0D0D0;
+        }
         .hi:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .id {
+            fill:#D0D0D0;
+        }
         .id:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .il {
+            fill:#D0D0D0;
+        }
         .il:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .in {
+            fill:#D0D0D0;
+        }
         .in:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ia {
+            fill:#D0D0D0;
+        }
         .ia:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        
+        .ks {
+            fill:#D0D0D0;
+        }
         .ks:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ky {
+            fill:#D0D0D0;
+        }
         .ky:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .la {
+            fill:#D0D0D0;
+        }
         .la:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .me {
+            fill:#D0D0D0;
+        }
         .me:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .md {
+            fill:#D0D0D0;
+        }
         .md:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ma {
+            fill:#D0D0D0;
+        }
         .ma:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .mi {
+            fill:#D0D0D0;
+        }
         .mi:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .mn {
+            fill:#D0D0D0;
+        }
         .mn:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .ms {
+            fill:#D0D0D0;
+        }
         .ms:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .mo {
+            fill:#D0D0D0;
+        }
         .mo:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .mt {
+            fill:#D0D0D0;
+        }
         .mt:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ne {
+            fill:#D0D0D0;
+        }
         .ne:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .nv {
+            fill:#D0D0D0;
+        }
         .nv:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .nh {
+            fill:#D0D0D0;
+        }
         .nh:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .nj {
+            fill:#D0D0D0;
+        }
         .nj:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .nm {
+            fill:#D0D0D0;
+        }
         .nm:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .ny {
+            fill:#D0D0D0;
+        }
         .ny:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .nc {
+            fill:#D0D0D0;
+        }
         .nc:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .nd {
+            fill:#D0D0D0;
+        }
         .nd:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .oh {
+            fill:#D0D0D0;
+        }
         .oh:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .ok {
+            fill:#D0D0D0;
+        }
         .ok:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .or {
+            fill:#D0D0D0;
+        }
         .or:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .pa {
+            fill:#D0D0D0;
+        }
         .pa:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .ri {
+            fill:#D0D0D0;
+        }
         .ri:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .sc {
+            fill:#D0D0D0;
+        }
         .sc:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .sd {
+            fill:#D0D0D0;
+        }
         .sd:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .tn {
+            fill:#D0D0D0;
+        }
         .tn:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .tx {
+            fill:#D0D0D0;
+        }
         .tx:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .ut {
+            fill:#D0D0D0;
+        }
         .ut:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .vt {
+            fill:#D0D0D0;
+        }
         .vt:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .va {
+            fill:#D0D0D0;
+        }
         .va:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .wa {
+            fill:#D0D0D0;
+        }
         .wa:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .wv {
+            fill:#D0D0D0;
+        }
         .wv:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
         
+        .wi {
+            fill:#D0D0D0;
+        }
         .wi:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
         }
 
+        .wy {
+            fill:#D0D0D0;
+        }
         .wy:hover {
             fill: rgb(120, 224, 184);
             transition: fill 0.3s;
